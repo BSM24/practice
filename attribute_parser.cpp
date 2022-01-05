@@ -13,13 +13,11 @@ int main() {
     string lines[200];
     printf("Enter the values of n and q\n");
     //scanf("%d %d", &n,&q);
-    cin >> n;
-    cin >> q;
-    cin >> ws;
-    for(int i = 1; i <= n; i++){
+    scanf("%d",&n);
+    for(int i = 0; i < n; i++){
             printf("Enter the line\n");
-            getline(cin,lines[i-1]);
-            cout << ">" << lines[i-1] <<endl;
+            getline(cin,lines[i]);
+            cout << ">" << lines[i] <<endl;
     }
 
 

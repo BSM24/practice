@@ -5,7 +5,13 @@ using namespace std;
 
 vector<int> parseInts(string str) {
 	// Complete this function
-    
+    vector<int> random;
+    stringstream ss(str);
+    string token;
+    while(getline(ss,token,',')){
+        random.push_back(stoi(token));
+    }
+    return random;
 }
 
 int main() {
