@@ -4,6 +4,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#include <sstream>
 using namespace std;
 
 
@@ -21,6 +22,9 @@ int main() {
             getline(cin >> ws,lines[i]);
             cout << ">" << lines[i] <<endl;
     }
+    string tagname;
+    cout << lines[0];
+    stringstream ss(lines[0]);
     
 
     return 0;
